@@ -1,0 +1,44 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>random</name>
+  <version>1.0</version>
+  <vendor email="yishidixiashang@gmail.com" >bxer</vendor>
+
+  <description>
+    webstrom 中的随机数生成插件，生成随机数用于接口mock等
+    webstrom 中的随机数生成插件，生成随机数用于接口mock等
+  </description>
+
+  <change-notes>
+    webstrom 中的随机数生成插件，生成随机数用于接口mock等
+    webstrom 中的随机数生成插件，生成随机数用于接口mock等
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+  <!-- Enable plugin for all products -->
+  <depends>com.intellij.modules.lang</depends>
+  <!-- This enables the PSI capability for JavaScript -->
+  <depends>JavaScript</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <group id="MyPlugin.SampleMenu" text="Sample Menu" description="Sample menu" popup="true">
+      <group id="TestActionSubGroup"/>
+      <action id="RandomPlug" class="com.bxer.RandomPlug" text="randomvalue"/>
+      <add-to-group group-id="EditorPopupMenu" anchor="first">
+      </add-to-group>
+    </group>
+
+  </actions>
+
+</idea-plugin>
