@@ -12,6 +12,11 @@ import com.intellij.openapi.project.Project;
 public class  EditorUtil
 
 {
+    /**
+     * 在当前光标写入
+     * @param e action 的事件对象
+     * @param charSequence
+     */
     public static void wirteIntoCurrentCaret(AnActionEvent e, CharSequence charSequence) {
         final Project project = e.getProject();
         final Editor editor = e.getData(CommonDataKeys.EDITOR);

@@ -1,6 +1,7 @@
 package com.bxer.action;
 
 import com.bxer.utils.EditorUtil;
+import com.bxer.utils.RandomUtil;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
@@ -18,7 +19,8 @@ public class RandomNumberAction extends AnAction {
     @Override
     public void actionPerformed(AnActionEvent e) {
         // TODO: insert action logic here
-        EditorUtil.wirteIntoCurrentCaret(e,"当前光标插入");
+        Integer intRandom = RandomUtil.getIntRandom(100);
+        EditorUtil.wirteIntoCurrentCaret(e,intRandom.toString());
         //Set visibility only in case of existing project and editor
     }
 

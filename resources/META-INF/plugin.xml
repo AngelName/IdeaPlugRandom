@@ -31,10 +31,11 @@
     <!-- Add your extensions here -->
   </extensions>
 
-  <actions>
+  <actions>784ea852f8
     <group id="MyPlugin.SampleMenu" text="Sample Menu" description="Sample menu" popup="true">
       <group id="TestActionSubGroup"/>
-      <action id="RandomPlug" class="com.bxer.action.RandomPlug" text="randomvalue"/>
+      <action id="RandomLetter" class="com.bxer.action.RandomLetterAction" text="random letter"/>
+      <action id="RandomValue" class="com.bxer.action.RandomNumberAction" text="random value" description="generate a 0 100 random value"/>
       <add-to-group group-id="EditorPopupMenu" anchor="first">
       </add-to-group>
     </group>
