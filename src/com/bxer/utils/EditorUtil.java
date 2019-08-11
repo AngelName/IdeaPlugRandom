@@ -9,8 +9,10 @@ import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.Project;
 
-public class InsertTextOncurrentCaret {
-    public static void test(AnActionEvent e, CharSequence charSequence) {
+public class  EditorUtil
+
+{
+    public static void wirteIntoCurrentCaret(AnActionEvent e, CharSequence charSequence) {
         final Project project = e.getProject();
         final Editor editor = e.getData(CommonDataKeys.EDITOR);
         CaretModel caretModel = editor.getCaretModel();

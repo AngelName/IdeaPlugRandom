@@ -34,7 +34,7 @@
   <actions>
     <group id="MyPlugin.SampleMenu" text="Sample Menu" description="Sample menu" popup="true">
       <group id="TestActionSubGroup"/>
-      <action id="RandomPlug" class="com.bxer.RandomPlug" text="randomvalue"/>
+      <action id="RandomPlug" class="com.bxer.action.RandomPlug" text="randomvalue"/>
       <add-to-group group-id="EditorPopupMenu" anchor="first">
       </add-to-group>
     </group>
