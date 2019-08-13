@@ -12,7 +12,7 @@ public class RandomLetterAction extends AnAction {
     @Override
     public void actionPerformed(AnActionEvent e) {
         // TODO: insert action logic here
-        CharSequence charSequence = UUID.randomUUID().toString().subSequence(0, 8);
-        EditorUtil.wirteIntoCurrentCaret(e,charSequence);
+        String letterCharacter = RandomUtil.getLetterCharacter8();
+        EditorUtil.wirteIntoCurrentCaret(e,letterCharacter);
     }
 }
