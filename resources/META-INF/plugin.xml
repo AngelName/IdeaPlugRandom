@@ -34,9 +34,10 @@
   <actions>
     <group id="MyPlugin.SampleMenu" text="Bxer Random" description="Give me a random" popup="true">
       <group id="TestActionSubGroup"/>
-      <action id="RandomLetter" class="com.bxer.action.RandomLetterAction" text="random letter" description="generate a  letter with a length 8"/>
-      <action id="RandomValue" class="com.bxer.action.RandomNumberAction" text="random number" description="generate a 0 100 random value"/>
-      <action id="RandomLetterAndNum" class="com.bxer.action.RandomLetterAndNumberAction" text="letter number" description="random leater and number with  length is 8"/>
+      <action id="RandomLetter" class="com.bxer.action.RandomLetterAction" text="letter" description="generate a  letter with a length 8"/>
+      <action id="RandomValue" class="com.bxer.action.RandomNumberAction" text="number" description="generate a 0 100 random value"/>
+      <action id="RandomLetterAndNum" class="com.bxer.action.RandomLetterAndNumberAction" text="letter and number" description="random letter and number with  length is 8"/>
+      <action id="RandomUpper" class="com.bxer.action.RandomUpperAction" text="upper" description="random upper case with  length is 8"/>
       <add-to-group group-id="EditorPopupMenu" anchor="first">
       </add-to-group>
     </group>

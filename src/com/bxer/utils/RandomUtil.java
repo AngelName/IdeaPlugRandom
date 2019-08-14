@@ -17,6 +17,10 @@ return null;
     public  static final String getLetterCharacter(){
         return Character.toString(RandomUtil.random.nextInt(26)+97);
     }
+
+    public  static final String getUpperCharacter(){
+        return Character.toString(RandomUtil.random.nextInt(26)+65);
+    }
     public static void main(String[] args) {
 
         for (int i = 0; i < 199; i++) {
@@ -29,6 +33,13 @@ return null;
         String  result="";
         for (int i = 0; i < 8; i++) {
             result+= RandomUtil.getLetterCharacter();
+        }
+        return result;
+    }
+    public static String getUpperCase8() {
+        String  result="";
+        for (int i = 0; i < 8; i++) {
+            result+= RandomUtil.getUpperCharacter();
         }
         return result;
     }
