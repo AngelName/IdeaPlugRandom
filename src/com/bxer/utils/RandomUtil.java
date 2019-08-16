@@ -12,9 +12,12 @@ public class RandomUtil {
         return RandomUtil.random.nextInt(bound);
     }
 
-    public static final String getStringRandom() {
-        return null;
-
+    public static final String getPasswordRandom() {
+        String password = "";
+        for (int i = 0; i < 16; i++) {
+            password +=Character.toString(RandomUtil.random.nextInt(33) + 93);
+        }
+        return password;
     }
 
     private static final String getLetterCharacter() {
@@ -24,13 +27,7 @@ public class RandomUtil {
     private static final String getUpperCharacter() {
         return Character.toString(RandomUtil.random.nextInt(26) + 65);
     }
-    public static void main(String[] args) {
 
-        for (int i = 0; i < 199; i++) {
-            String letterCharacter = RandomUtil.getLetterCharacter();
-            System.out.print(letterCharacter + "\t");
-        }
-    }
     public static String getLetterCharacter8() {
         String result = "";
         for (int i = 0; i < 8; i++) {
@@ -44,5 +41,11 @@ public class RandomUtil {
             result += RandomUtil.getUpperCharacter();
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 16; i++) {
+            System.out.print(getPasswordRandom());
+        }
     }
 }

@@ -39,6 +39,7 @@
       <action id="RandomLetterAndNum" class="com.bxer.action.RandomLetterAndNumberAction" text="letter and number" description="random letter and number with  length is 8"/>
       <action id="RandomUpper" class="com.bxer.action.RandomUpperAction" text="upper" description="random upper case with  length is 8"/>
       <action id="RandomColor" class="com.bxer.action.RandomColorAction" text="random color" description="random color #random"/>
+      <action id="RandomPassword" class="com.bxer.action.RandomPasswordAction" text="random password" description="random  password"/>
 
       <add-to-group group-id="EditorPopupMenu" anchor="first">
       </add-to-group>
